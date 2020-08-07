@@ -12,6 +12,15 @@ While a more detailed 'explainer' (of the scenario, code walkthrough, logical/ph
 
 \* the smart contract uses these (along with business logic) to decide outcomes; some inputs change the asset _state_ (like 'ownership') ; some don't (however, the inputs *are* still recorded in the individual transaction's history on the blockchain).
 
+Expand the twisty to see an overview of a 'typical' Commercial paper marketplace - transactions, queries being executed by different organisations (we'll focus on two of these organisations)
+
+<details><summary>PaperNet - a commercial paper trading marketplace</summary>
+
+![PaperNet Overview](img/overview.png)
+
+</p>
+</details>
+
 But first, it might useful to explain Commercial Paper, a form of financial bond issued to obtain capital, and operates in global financial markets. A Commercial Paper instance is represented as an asset with a lifecycle, recorded on the blockchain - transactions change its _state_ (over time).
 
 
@@ -23,8 +32,8 @@ It is a financial instrument, issued by established companies (eg big manufactur
 
 </p>
 </details>
+
 <details><summary>Ins and Outs, Attractions of Commercial Paper Investment?</summary>
-    
 
 Investors (who buy Commercial Paper) are attracted as they agree to buy them at a discount (say $4.94m) on the face value (eg $5m) and obtain a higher yield than if they were simply gaining interest in a bank (eg. 2% interest on $4.95m today = $5m in 6 months time). The difference represents a 'premium' for carrying the risk of a debt/loan that is unsecured (unlike a bank) - which is where credit risk and ratings comes in. The actual yield from the investment chosen is in effect $10k greater (in this example).
 
