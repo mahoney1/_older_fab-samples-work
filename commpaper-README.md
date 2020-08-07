@@ -10,7 +10,7 @@ While a more detailed 'explainer' (of the scenario, code walkthrough, logical/ph
 * explore the key 'takeaways'  ie. understanding the difference between asset _state_ changes ('e.g. 'ownership', 'status') and transaction _inputs_* (e.g. 'purchase price')
 * try out some queries
 
-\* the smart contract uses these (along with business logic) to decide outcomes; some inputs change the asset _state_ (like 'ownership') ; some don't (however. the inputs are still recorded in the individual transaction's history on the blockchain).
+\* the smart contract uses these (along with business logic) to decide outcomes; some inputs change the asset _state_ (like 'ownership') ; some don't (however, the inputs *are* still recorded in the individual transaction's history on the blockchain).
 
 But first, it might useful to explain Commercial Paper, a form of financial bond issued to obtain capital, and operates in global financial markets. A Commercial Paper instance is represented as an asset with a lifecycle, recorded on the blockchain - transactions change its _state_ over time).
 
