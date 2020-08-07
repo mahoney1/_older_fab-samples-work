@@ -62,7 +62,7 @@ This `README.md` file is in the `commercial-paper` directory, the source code fo
 
 1) Start the Hyperledger Fabric infrastructure
 
-  The 'test-network' will be used - this has two organizations 'org1' and 'org2'  DigiBank will be org1, and MagnetoCorp will be org2. 
+   The 'test-network' will be used - this has two organizations 'org1' and 'org2'  DigiBank will be org1, and MagnetoCorp will be org2. 
 
 2) Install and Instantiate the Contracts
 
@@ -84,7 +84,13 @@ You will need a machine with the following
 You will need to install the peer cli binaries and this fabric-samples repository available. For more information
 [Install the Samples, Binaries and Docker Images](https://hyperledger-fabric.readthedocs.io/en/latest/install.html) in the Hyperledger Fabric documentation.
 
-It is advised to have 3 console windows open; one to monitor the infrastructure and one each for MagnetoCorp and DigiBank. Once you've cloned the fabric-samples - change to the commercial-paper directory in each window. 
+It is advised to have 3 console windows open; 
+
+* one to monitor the infrastructure and 
+* one each for MagnetoCorp and 
+* DigiBank. 
+
+Once you've cloned the fabric-samples - change to the commercial-paper directory in each window. 
 
 ```
 cd fabric-samples/commercial-paper
