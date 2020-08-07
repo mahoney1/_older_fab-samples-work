@@ -2,15 +2,28 @@
 
 # Commercial Paper Tutorial
 
-This folder contains smart contract + application client that executes a Commercial Paper use case. While a more detailed 'explainer' (of the scenario, code walkthrough, logical/physical representation of ledger data cab be found in the [Hyperledger Fabric Commercial Paper Tutorial](https://hyperledger-fabric.readthedocs.io/en/latest/tutorial/commercial_paper.html), the aim of the tutorial is to take you through a subset of the 'full' use case and explore (as a sample should) key 'takeaways'. But first, it might useful to explain Commercial Paper, a form of financial bond, operating in global financial markets and, in effect, represented as an asset with a lifecycle in the blockchain.
+This folder contains smart contract and application client code that executes a Commercial Paper use case. 
+
+While a more detailed 'explainer' (of the scenario, code walkthrough, logical/physical representation of ledger data can be found in the [Hyperledger Fabric Commercial Paper Tutorial](https://hyperledger-fabric.readthedocs.io/en/latest/tutorial/commercial_paper.html), the amin of this sample is:
+
+    - to execute just a subset of the 'full' use case and 
+    - to explore (as a sample should) key 'takeaways'. 
+    
+But first, it might useful to explain Commercial Paper, a form of financial bond, operating in global financial markets. A Commercial Paper is, in effect, represented as an asset with a time-based lifecycle in the blockchain.
 
 ## What is Commercial Paper in short?
 
 It is a financial instrument, issued by established companies (eg big manufacturers, blue chip corporations) to gain short-term capital - usually no more than 6-9 months. Why? To meet short-term financial obligations. They issue a paper  ('bond', promissory note) for specific projects, such as big capital investments, to pay contractors or even debt restructuring. The tutorial describes MagnetoCorp (car manufacturer) who landed a huge contract, and will need $5m in capital (payroll obligations), to hire 1000 car workers for at least 6 months (with no car revenues yet - its a short term financial strain).
 
+<details><summary>Ins and Outs of Commercial Paper Investment</summary>
+
 Investors (who buy Commercial Paper) are attracted as they buy them at a discount on the face value (eg $5m) and obtain a higher yield than if they were simply gaining interest in a bank. The discount represents a 'premium' above the base central bank rate - the 'yield' reflects the risk of a debt/loan that is unsecured - which is where credit risk and ratings comes in.
+
 Once an issuing corporation becomes established in the commercial paper marketplace, it builds a high credit rating (risk affects how much discount investors seek) - in fact, it is often cheaper (for a blue chip company) to draw on a commercial paper than on a bank line of credit,
 I mentioned marketplace: even during a 6-9 month period, a commercial paper can be bought and sold before the Commercial Paper reaches its maturity date: the day when the current investor (or owner) 'redeems' the paper bond with MagnetoCorp and gets its $5m (face value) back.
+
+</p>
+</details>
 
 ## Scenario
 
@@ -24,7 +37,8 @@ The tutorial shows the commercial paper asset lifecycle: _issue_, _buy_ ( 1 to _
 
 Client applications (CLI based) are used, to perform the transactions. 
 
-Once you’ve set up a basic network, you’ll act as Isabella, an employee of MagnetoCorp, who will issue a commercial paper on its behalf. You’ll then switch hats to take the role of Balaji, an employee of DigiBank, who will buy this commercial paper, hold it for a period of time, and then redeem it with MagnetoCorp for a small profit.
+It uses the `test-network` (which is part of Fabric Samples). You’ll act as Isabella, an employee of MagnetoCorp (Org1), who will issue a commercial paper on its behalf. You’ll then switch hats to take the role of Balaji, an employee of DigiBank (Org2), who will buy this commercial paper, hold it for a period of time, and then redeem it with MagnetoCorp for a small profit or yield. Then later, you'll query the ledger - that's it :-) 
+
 
 ### Overview 
 
