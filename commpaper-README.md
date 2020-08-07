@@ -4,11 +4,11 @@
 
 This folder contains smart contract and application client code that executes a Commercial Paper use case. 
 
-While a more detailed 'explainer' (of the scenario, code walkthrough, logical/physical representation of ledger data can be found in the [Hyperledger Fabric Commercial Paper Tutorial](https://hyperledger-fabric.readthedocs.io/en/latest/tutorial/commercial_paper.html), the amin of this sample is:
+While a more detailed 'explainer' (of the scenario, code walkthrough, logical/physical representation of ledger data can be found in the [Hyperledger Fabric Commercial Paper Tutorial](https://hyperledger-fabric.readthedocs.io/en/latest/tutorial/commercial_paper.html), the amin of this sample is to:
 
-    to execute just a subset of the 'full' use case and 
-    to explore the key 'takeaways'
-    try out some queries
+* execute just a subset of the 'full' use case and 
+* explore the key 'takeaways'
+* try out some queries
     
 But first, it might useful to explain Commercial Paper, a form of financial bond issued to obtain capital, and operates in global financial markets. A Commercial Paper instance is, in effect, represented as an asset with a time-based lifecycle in the blockchain.
 
