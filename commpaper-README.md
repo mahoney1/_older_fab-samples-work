@@ -66,7 +66,7 @@ It uses the `test-network` (which is part of Fabric Samples). You’ll act as Is
 
 ## Quick Start
 
-You are strongly advised to read the full tutorial to get information about the code and the scenario. Below are the quick start instructions for running the tutorial, but without extensive details of what is happening.
+Below are the quick start instructions for running the tutorial. As mentioned, if you're interested in a 'deeper dive' analysis and importance of the concepts, design, structure and implementation  of the smart contract,  they can be found in the [Hyperledger Fabric Commercial Paper Tutorial](https://hyperledger-fabric.readthedocs.io/en/latest/tutorial/commercial_paper.html). Suffice to say, you DON'T have to have read this, to do this tutorial.
 
 This `README.md` file is in the `commercial-paper` directory, the source code for client applications and the contracts is in the `organization` directory.
 
