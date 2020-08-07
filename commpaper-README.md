@@ -14,7 +14,7 @@ While a more detailed 'explainer' (of the scenario, code walkthrough, logical/ph
 
 Expand the twisty to see an overview of a 'typical' Commercial paper marketplace - transactions, queries being executed by different organisations (we'll focus on two of these organisations)
 
-<details><summary>PaperNet - a commercial paper trading marketplace</summary>
+<details><summary>PaperNet Overview - commercial paper marketplace</summary>
 
 ![PaperNet Overview](img/overview.png)
 
