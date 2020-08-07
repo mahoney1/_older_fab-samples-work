@@ -15,7 +15,7 @@ While a more detailed 'explainer' (of the scenario, code walkthrough, logical/ph
 But first, it might useful to explain Commercial Paper, a form of financial bond issued to obtain capital, and operates in global financial markets. A Commercial Paper instance is represented as an asset with a lifecycle, recorded on the blockchain - transactions change its _state_ (over time).
 
 
-### Overview 
+#### Explainers 
 
 <details><summary>Commercial Paper - what is it?</summary>
 ### What is Commercial Paper in short?
