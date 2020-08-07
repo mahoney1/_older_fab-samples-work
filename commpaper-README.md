@@ -17,13 +17,13 @@ But first, it might useful to explain Commercial Paper, a form of financial bond
 
 ### Overview 
 
-![](https://hyperledger-fabric.readthedocs.io/en/latest/_images/commercial_paper.diagram.1.png)
-
-
+<details><summary>Commercial Paper - what is it?</summary>
 ### What is Commercial Paper in short?
 
 It is a financial instrument, issued by established companies (eg big manufacturers, blue chip corporations) to gain short-term capital - usually no more than 6-9 months. Why? To meet short-term financial obligations. They issue a paper  ('bond', promissory note) for specific projects, such as big capital investments, to pay contractors or even debt restructuring. The tutorial describes MagnetoCorp (car manufacturer) who landed a huge contract, and will need $5m in capital (payroll obligations), to hire 1000 car workers for at least 6 months (with no car revenues yet - its a financial strain).
 
+</p>
+</details>
 <details><summary>Ins and Outs, Attractions of Commercial Paper Investment</summary>
     
 
@@ -36,7 +36,9 @@ I mentioned marketplace: even during a 6-9 month period, a commercial paper can 
 </p>
 </details>
 
-## Scenario
+## Scenario Overview
+
+![](https://hyperledger-fabric.readthedocs.io/en/latest/_images/commercial_paper.diagram.1.png)
 
 In this tutorial two organizations, MagnetoCorp and DigiBank, trade commercial paper with each other on 'PaperNet', the marketplace represented by a Hyperledger Fabric blockchain network. 
 
