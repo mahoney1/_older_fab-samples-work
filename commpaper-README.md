@@ -17,6 +17,7 @@ But first, it might useful to explain Commercial Paper, a form of financial bond
 It is a financial instrument, issued by established companies (eg big manufacturers, blue chip corporations) to gain short-term capital - usually no more than 6-9 months. Why? To meet short-term financial obligations. They issue a paper  ('bond', promissory note) for specific projects, such as big capital investments, to pay contractors or even debt restructuring. The tutorial describes MagnetoCorp (car manufacturer) who landed a huge contract, and will need $5m in capital (payroll obligations), to hire 1000 car workers for at least 6 months (with no car revenues yet - its a financial strain).
 
 <details><summary>Ins and Outs, Attractions of Commercial Paper Investment</summary>
+    
 
 Investors (who buy Commercial Paper) are attracted as they buy them at a discount on the face value (eg $5m) and obtain a higher yield than if they were simply gaining interest in a bank. The discount represents a 'premium' above the base central bank rate - the 'yield' reflects the risk of a debt/loan that is unsecured - which is where credit risk and ratings comes in.
 
