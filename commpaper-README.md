@@ -62,11 +62,6 @@ Client applications (CLI based) are used, to perform the transactions.
 
 It uses the `test-network` (which is part of Fabric Samples). You’ll act as Isabella, an employee of MagnetoCorp (Org1), who will issue a commercial paper on its behalf. You’ll then switch hats to take the role of Balaji, an employee of DigiBank (Org2), who will buy this commercial paper, hold it for a period of time, and then redeem it with MagnetoCorp for a small profit or yield. Then later, you'll query the ledger - that's it :-) 
 
-<details><summary>Transaction Flow</summary>
-
-</p>
-</details>
-
 
 ## Quick Start
 
