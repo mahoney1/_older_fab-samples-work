@@ -12,7 +12,7 @@ While a more detailed 'explainer' (of the scenario, code walkthrough, logical/ph
 
 \* the smart contract uses these (along with business logic) to decide outcomes; some inputs change the asset like _'ownership'_ or _'status'_ ; some don't e.g. _'purchase price_' (however. the inputs are still recorded in the individual transaction's history on the blockchain).
 
-But first, it might useful to explain Commercial Paper, a form of financial bond issued to obtain capital, and operates in global financial markets. A Commercial Paper instance is (in our scenario), in effect, represented as an asset with a lifecycle, recorded on the blockchain (along with transaction that target it, point im time).
+But first, it might useful to explain Commercial Paper, a form of financial bond issued to obtain capital, and operates in global financial markets. A Commercial Paper instance is represented as an asset with a lifecycle, recorded on the blockchain - transactions change its _state_ over time).
 
 
 ### Overview 
