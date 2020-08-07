@@ -4,9 +4,9 @@
 
 This folder contains smart contract and application client code that executes a Commercial Paper use case. 
 
-While a more detailed 'explainer' (of the scenario, code walkthrough, logical/physical representation of ledger data can be found in the [Hyperledger Fabric Commercial Paper Tutorial](https://hyperledger-fabric.readthedocs.io/en/latest/tutorial/commercial_paper.html), the amin of this sample is to:
+While a more detailed 'explainer' (of the scenario, code walkthrough, logical/physical representation of ledger data) can be found in the [Hyperledger Fabric Commercial Paper Tutorial](https://hyperledger-fabric.readthedocs.io/en/latest/tutorial/commercial_paper.html), the aim of this sample is to:
 
-* execute just a subset of the 'full' use case and 
+* see a Commercial Paper use case in action
 * explore the key 'takeaways'
 * try out some queries
     
