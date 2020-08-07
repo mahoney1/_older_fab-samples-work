@@ -4,7 +4,7 @@
 
 This folder contains smart contract and application client code (in a choice of languages, eg Node.JS, Java, Go etc) that executes a Commercial Paper use case. 
 
-While a more detailed 'explainer' (of the scenario, code walkthrough, logical/physical representation of ledger data) can be found in the [Hyperledger Fabric Commercial Paper Tutorial](https://hyperledger-fabric.readthedocs.io/en/latest/tutorial/commercial_paper.html), the aim of this sample is to:
+While a more detailed 'explainer' (of the scenario, code walkthrough & practices, logical/physical representation of ledger data) can be found in the [Hyperledger Fabric Commercial Paper Tutorial](https://hyperledger-fabric.readthedocs.io/en/latest/tutorial/commercial_paper.html), the aim of this sample is to:
 
 * see a Commercial Paper use case in action
 * explore the key 'takeaways'  ie. understanding the difference between asset _state_ changes ('e.g. 'ownership', 'status') and transaction _inputs_* (e.g. 'purchase price')
