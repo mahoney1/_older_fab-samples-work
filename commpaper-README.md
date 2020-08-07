@@ -12,7 +12,13 @@ While a more detailed 'explainer' (of the scenario, code walkthrough, logical/ph
     
 But first, it might useful to explain Commercial Paper, a form of financial bond issued to obtain capital, and operates in global financial markets. A Commercial Paper instance is, in effect, represented as an asset with a time-based lifecycle in the blockchain.
 
-## What is Commercial Paper in short?
+
+### Overview 
+
+![](https://hyperledger-fabric.readthedocs.io/en/latest/_images/commercial_paper.diagram.1.png)
+
+
+### What is Commercial Paper in short?
 
 It is a financial instrument, issued by established companies (eg big manufacturers, blue chip corporations) to gain short-term capital - usually no more than 6-9 months. Why? To meet short-term financial obligations. They issue a paper  ('bond', promissory note) for specific projects, such as big capital investments, to pay contractors or even debt restructuring. The tutorial describes MagnetoCorp (car manufacturer) who landed a huge contract, and will need $5m in capital (payroll obligations), to hire 1000 car workers for at least 6 months (with no car revenues yet - its a financial strain).
 
@@ -41,16 +47,11 @@ Client applications (CLI based) are used, to perform the transactions.
 
 It uses the `test-network` (which is part of Fabric Samples). You’ll act as Isabella, an employee of MagnetoCorp (Org1), who will issue a commercial paper on its behalf. You’ll then switch hats to take the role of Balaji, an employee of DigiBank (Org2), who will buy this commercial paper, hold it for a period of time, and then redeem it with MagnetoCorp for a small profit or yield. Then later, you'll query the ledger - that's it :-) 
 
-
-### Overview 
-
-![](https://hyperledger-fabric.readthedocs.io/en/latest/_images/commercial_paper.diagram.1.png)
-
-
 <details><summary>Transaction Flow</summary>
 
 </p>
 </details>
+
 
 ## Quick Start
 
