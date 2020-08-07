@@ -7,10 +7,10 @@ This folder contains smart contract and application client code (in a choice of 
 While a more detailed 'explainer' (of the scenario, code walkthrough, logical/physical representation of ledger data) can be found in the [Hyperledger Fabric Commercial Paper Tutorial](https://hyperledger-fabric.readthedocs.io/en/latest/tutorial/commercial_paper.html), the aim of this sample is to:
 
 * see a Commercial Paper use case in action
-* explore the key 'takeaways'  ie. understanding the difference between asset _state_ changes ('e.g. 'ownership', 'status') and transaction _inputs_* ('parameters' e.g. 'purchase price')
+* explore the key 'takeaways'  ie. understanding the difference between asset _state_ changes ('e.g. 'ownership', 'status') and transaction _inputs_* (e.g. 'purchase price')
 * try out some queries
 
-\* the smart contract uses these (along with business logic) to decide outcomes; some inputs change the asset like _'ownership'_ or _'status'_ ; some don't e.g. _'purchase price_' (however. the inputs are still recorded in the individual transaction's history on the blockchain).
+\* the smart contract uses these (along with business logic) to decide outcomes; some inputs change the asset _state_ (like 'ownership') ; some don't (however. the inputs are still recorded in the individual transaction's history on the blockchain).
 
 But first, it might useful to explain Commercial Paper, a form of financial bond issued to obtain capital, and operates in global financial markets. A Commercial Paper instance is represented as an asset with a lifecycle, recorded on the blockchain - transactions change its _state_ over time).
 
