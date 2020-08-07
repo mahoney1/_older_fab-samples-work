@@ -7,7 +7,7 @@ This folder contains smart contract and application client code that executes a 
 While a more detailed 'explainer' (of the scenario, code walkthrough, logical/physical representation of ledger data) can be found in the [Hyperledger Fabric Commercial Paper Tutorial](https://hyperledger-fabric.readthedocs.io/en/latest/tutorial/commercial_paper.html), the aim of this sample is to:
 
 * see a Commercial Paper use case in action
-* explore the key 'takeaways'  ie. understanding the difference between asset _state_ changes ('transition', 'lifecycle'), and transaction _inputs_ *('inputs', 'parameters')
+* explore the key 'takeaways'  ie. understanding the difference between asset _state_ changes ('transition', 'lifecycle' of an asset including its atttributes), and transaction _inputs_ *('inputs', 'parameters')
 * try out some queries
 
 _* the smart contract uses these (along with business logic) to decide outcomes; some of these inputs change the asset like _'ownership'_ or _'status'_ ; some don't e.g. _'price_' (the transaction inputs still recorded in the transaction's history on the blockchain though)_
