@@ -10,7 +10,7 @@ While a more detailed 'explainer' (of the scenario, code walkthrough & practices
 * explore the key 'takeaways'  ie. understanding the difference between asset _state_ changes ('e.g. 'ownership', 'status') and transaction _inputs_* (e.g. 'purchase price')
 * try out some queries
 
-\* the smart contract uses these (along with business logic) to decide outcomes; some inputs change the asset _state_ (like 'ownership') ; some don't (however, the inputs *are* still recorded in the individual transaction's history on the blockchain).
+\* the smart contract uses these (along with business logic) to decide outcomes; some inputs change the asset _state_ (like 'ownership') ; some don't.
 
 Expand the twisty to see an overview of a 'typical' Commercial paper marketplace - transactions, queries being executed by different organisations (we'll focus on two of these organisations)
 
@@ -52,8 +52,8 @@ In this tutorial two organizations, MagnetoCorp and DigiBank, trade commercial p
 
 The tutorial shows the commercial paper asset lifecycle: _issue_, _buy_ ( 1 to _n_ ), and _redeem_ transactions: the key 'takeaways' from the scenario are:
 
-- understanding the  _changes in state_ in the commercial paper asset (reflected in the ledger world state), an asset that reaches maturity (some 6 months later).
-- understanding the _transaction inputs_  for each transaction (some inputs change the asset  _state_ - eg. ownership) and some are just transaction _inputs_  (e.g. purchase price) and not part of the asset - but still recorded for proof etc)
+- understanding the  _changes in state_ in the commercial paper asset (reflected in the ledger world state) which reaches maturity after 6 months.
+- understanding the _transaction inputs_  for each transaction (some inputs change the asset  _state_ - eg. ownership) and some _don't_  (e.g. purchase price) and not part of the asset - but importantly, the _inputs_ for a given transaction are recorded on the blockchain).
 - understanding the importance of _queries_  such as: asset history, rich queries (criteria matching etc), transaction history (where the inputs are recorded)
 
 Client applications (CLI based) are used, to perform the transactions. 
