@@ -7,12 +7,12 @@ This folder contains smart contract and application client code that executes a 
 While a more detailed 'explainer' (of the scenario, code walkthrough, logical/physical representation of ledger data) can be found in the [Hyperledger Fabric Commercial Paper Tutorial](https://hyperledger-fabric.readthedocs.io/en/latest/tutorial/commercial_paper.html), the aim of this sample is to:
 
 * see a Commercial Paper use case in action
-* explore the key 'takeaways'  ie. understanding the difference between asset _state_ changes ('transition', 'lifecycle' of an asset including its atttributes), and transaction _inputs_ *('inputs', 'parameters')
+* explore the key 'takeaways'  ie. understanding the difference between asset _state_ changes ('transition', 'lifecycle' of an asset including its atttributes), and transaction _inputs_* ('inputs', 'parameters')
 * try out some queries
 
-_* the smart contract uses these (along with business logic) to decide outcomes; some of these inputs change the asset like _'ownership'_ or _'status'_ ; some don't e.g. _'purchase price_' during a _buy_ (however. the transaction inputs that took place during the _buy_, are still recorded in the individual transaction's history on the blockchain though)_
+_* the smart contract uses these (along with business logic) to decide outcomes; some of the inputs change the asset like _'ownership'_ or _'status'_ ; some don't e.g. _'purchase price_' during a _buy_ (however. the transaction inputs are still recorded in the individual transaction's history on the blockchain though)_
 
-But first, it might useful to explain Commercial Paper, a form of financial bond issued to obtain capital, and operates in global financial markets. A Commercial Paper instance is, in effect, represented as an asset with a time-based lifecycle in the blockchain.
+But first, it might useful to explain Commercial Paper, a form of financial bond issued to obtain capital, and operates in global financial markets. A Commercial Paper instance is (in our scenario), in effect, represented as an asset with a lifecycle, recorded on the blockchain (along with transaction that target it, point im time).
 
 
 ### Overview 
