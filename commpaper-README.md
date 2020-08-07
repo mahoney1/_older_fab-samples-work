@@ -6,16 +6,17 @@ This folder contains smart contract and application client code that executes a 
 
 While a more detailed 'explainer' (of the scenario, code walkthrough, logical/physical representation of ledger data can be found in the [Hyperledger Fabric Commercial Paper Tutorial](https://hyperledger-fabric.readthedocs.io/en/latest/tutorial/commercial_paper.html), the amin of this sample is:
 
-    - to execute just a subset of the 'full' use case and 
-    - to explore (as a sample should) key 'takeaways'. 
+    to execute just a subset of the 'full' use case and 
+    to explore the key 'takeaways'
+    try out some queries
     
-But first, it might useful to explain Commercial Paper, a form of financial bond, operating in global financial markets. A Commercial Paper is, in effect, represented as an asset with a time-based lifecycle in the blockchain.
+But first, it might useful to explain Commercial Paper, a form of financial bond issued to obtain capital, and operates in global financial markets. A Commercial Paper instance is, in effect, represented as an asset with a time-based lifecycle in the blockchain.
 
 ## What is Commercial Paper in short?
 
-It is a financial instrument, issued by established companies (eg big manufacturers, blue chip corporations) to gain short-term capital - usually no more than 6-9 months. Why? To meet short-term financial obligations. They issue a paper  ('bond', promissory note) for specific projects, such as big capital investments, to pay contractors or even debt restructuring. The tutorial describes MagnetoCorp (car manufacturer) who landed a huge contract, and will need $5m in capital (payroll obligations), to hire 1000 car workers for at least 6 months (with no car revenues yet - its a short term financial strain).
+It is a financial instrument, issued by established companies (eg big manufacturers, blue chip corporations) to gain short-term capital - usually no more than 6-9 months. Why? To meet short-term financial obligations. They issue a paper  ('bond', promissory note) for specific projects, such as big capital investments, to pay contractors or even debt restructuring. The tutorial describes MagnetoCorp (car manufacturer) who landed a huge contract, and will need $5m in capital (payroll obligations), to hire 1000 car workers for at least 6 months (with no car revenues yet - its a financial strain).
 
-<details><summary>Ins and Outs of Commercial Paper Investment</summary>
+<details><summary>Ins and Outs, Attractions of Commercial Paper Investment</summary>
 
 Investors (who buy Commercial Paper) are attracted as they buy them at a discount on the face value (eg $5m) and obtain a higher yield than if they were simply gaining interest in a bank. The discount represents a 'premium' above the base central bank rate - the 'yield' reflects the risk of a debt/loan that is unsecured - which is where credit risk and ratings comes in.
 
