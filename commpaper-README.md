@@ -37,11 +37,10 @@ It is a financial instrument, issued by established companies (eg big manufactur
 <details><summary>Ins and Outs, Attractions of Commercial Paper Investment?</summary>
 
 </br>
-Investors (who buy Commercial Paper) are attracted as they agree to buy them at a discount (say $4.94m) on the face value (eg $5m) and obtain a higher yield than if they were simply gaining interest in a bank (eg. 2% interest on $4.95m today = $5m in 6 months time). The difference represents a 'premium' for carrying the risk of a debt/loan that is unsecured (unlike a bank) - which is where credit risk and ratings comes in. The actual yield from the investment chosen is in effect $10k greater (than pure interest).  
-
-
+Investors (who buy Commercial Paper) are attracted as they agree to buy them at a discount (say $4.94m) on the face value (eg $5m) and obtain a higher yield than if they were simply gaining interest in a bank (eg. 2% interest on $4.95m today = $5m in 6 months time). The difference represents a 'premium' for carrying the risk of a debt/loan that is unsecured (unlike a bank) - which is where credit risk and ratings comes in. The actual yield from the investment chosen is in effect $10k greater (than pure interest). 
+</br>
 Once an issuing corporation becomes established in the commercial paper marketplace, it builds a high credit rating (risk affects how much of a premium investors seek and therefore discount accordingly) - in fact, it is often cheaper (for a blue chip company) to draw on a commercial paper than on a bank line of credit.
-
+</br>
 I mentioned marketplace: even during a 6-9 month period, a commercial paper can be bought and sold multiple times, before the Commercial Paper reaches its maturity date, the day when the current investor (or owner) 'redeems' the paper bond with MagnetoCorp the issuer and gets its $5m (the face value) back.
 
 </p>
