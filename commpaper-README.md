@@ -43,7 +43,6 @@ Once an issuing corporation becomes established in the commercial paper marketpl
 
 I mentioned marketplace: even during a 6-9 month period, a commercial paper can be bought and sold multiple times, before the Commercial Paper reaches its maturity date, the day when the current investor (or owner) 'redeems' the paper bond with MagnetoCorp the issuer and gets its $5m (the face value) back.
 
-</p>
 </details>
 
 ## Scenario Overview
