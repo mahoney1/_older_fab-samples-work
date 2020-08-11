@@ -1,18 +1,22 @@
 <a name="top"></a>
 
-# Commercial Paper Tutorial
+# Introduction: Commercial Paper Tutorial & Samples
 
-This folder contains smart contract and application client code (in a choice of languages, eg Node.JS, Java, Go etc) that executes a Commercial Paper use case. 
+This folder contains a comprehensive set of smart contracts and application clients (ie. in a choice of languages, eg Node.JS, Java, Go etc) that executes a Commercial Paper, a global finance & investment use case. The sample contract also provide a range of queries to try out, to consolidate what you learn when you execute transactions during the tutorial.
 
-While a more detailed 'explainer' (of the scenario, code walkthrough & practices, logical/physical representation of ledger data) can be found in the [Hyperledger Fabric Commercial Paper Tutorial](https://hyperledger-fabric.readthedocs.io/en/latest/tutorial/commercial_paper.html), the aim of this sample is to:
+While a more detailed 'explainer' of the Commercial Paper scenario (including use case analysis, code walkthrough & practices, logical/physical representation of ledger data etc) can be found in the [Hyperledger Fabric Commercial Paper Tutorial](https://hyperledger-fabric.readthedocs.io/en/latest/tutorial/commercial_paper.html), you don't have to read through this, just to try out this sample. 
 
+<details><summary>Key Objectives of Sample </summary>
 * see a Commercial Paper use case in action
-* explore the key 'takeaways'  ie. understanding the difference between asset _state_ changes ('e.g. 'ownership', 'status') and transaction _inputs_* (e.g. 'purchase price')
-* try out some queries
+* explore the key 'takeaways': understand differences between asset _state_ changes ('e.g. 'lifecycle') and transaction _inputs_* (e.g. 'inputs' during lifecycle)
+* try out a number of different query types: asset history, asset state, ownership, partial key, named query (criteria-based), ad-hoc queries (you supply a query)
 
 \* the smart contract uses these (along with business logic) to decide outcomes; some inputs change the asset _state_ (like 'ownership') ; some don't.
 
-Expand the twisty to see an overview of a 'typical' Commercial paper marketplace - transactions, queries being executed by different organisations (we'll focus on two of these organisations)
+</p>
+</details>
+
+Expand the twisty below to see an overview of a 'typical' Commercial paper marketplace - transactions, queries being executed by different organisations (we'll focus on two of these organisations)
 
 <details><summary>PaperNet Overview - commercial paper marketplace</summary>
 
