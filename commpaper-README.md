@@ -16,6 +16,8 @@ While a more detailed 'explainer' of the Commercial Paper scenario (including us
 </p>
 </details>
 
+But first, it might useful to explain Commercial Paper, a form of financial bond issued to obtain capital, and operates in global financial markets. A Commercial Paper instance is represented as an asset with a lifecycle, recorded on the blockchain - transactions change its _state_ (over time) and those transactions, naturally - have _inputs_.
+
 Expand the twisty below to see an overview of a 'typical' Commercial paper marketplace - transactions, queries being executed by different organisations (we'll focus on two of these organisations)
 
 <details><summary>PaperNet Overview - commercial paper marketplace</summary>
@@ -24,8 +26,6 @@ Expand the twisty below to see an overview of a 'typical' Commercial paper marke
 
 </p>
 </details>
-
-But first, it might useful to explain Commercial Paper, a form of financial bond issued to obtain capital, and operates in global financial markets. A Commercial Paper instance is represented as an asset with a lifecycle, recorded on the blockchain - transactions change its _state_ (over time).
 
 
 #### Explainers 
