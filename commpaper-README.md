@@ -6,7 +6,7 @@ This folder contains a structured set of smart contracts and application clients
 
 While a more detailed 'explainer' of the Commercial Paper scenario (including use case analysis, code walkthrough & practices, logical/physical representation of ledger data etc) can be found in the [Hyperledger Fabric Commercial Paper Tutorial](https://hyperledger-fabric.readthedocs.io/en/latest/tutorial/commercial_paper.html), you don't have to read through this, just to try out this sample. There's also a [Wikipedia page](https://en.wikipedia.org/wiki/Commercial_paper)
 
-<details><summary>Key Objectives of Sample </summary>
+<details><summary>Key Objectives </summary>
 
   * see a Commercial Paper use case in action 
     
