@@ -23,13 +23,13 @@ But first, it might useful to explain Commercial Paper, an unsecured promissory 
 
 Expand the twisty below to see an overview of a 'typical' Commercial paper marketplace - transactions, queries being executed by different organisations (we'll focus on two of these organisations)
 
-<details><summary>PaperNet Overview - commercial paper marketplace</summary>
+<details><summary>PaperNet Overview - The sample commercial paper marketplace</summary>
 
 ![PaperNet Overview](img/overview.png)
 
 </p>
 </details>
-Commercial paper is purchased by money market funds and banks.
+
 
 #### Explainers 
 
