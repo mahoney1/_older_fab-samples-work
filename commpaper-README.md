@@ -1,6 +1,8 @@
 <a name="top"></a>
 
-# Introduction: Commercial Paper Tutorial & Samples
+# Commercial Paper Tutorial & Samples
+
+## Introduction
 
 This folder contains a structured set of smart contracts and application clients (ie. in a choice of languages, eg Node.JS, Java, Go etc) relating to *Commercial Paper*, a finance 'instrument' (in Global Finance). The sample contract also provide a range of queries to try out, to consolidate what you learn when you execute transactions during the tutorial.
 
