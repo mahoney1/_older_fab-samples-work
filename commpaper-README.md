@@ -2,13 +2,13 @@
 
 # Introduction: Commercial Paper Tutorial & Samples
 
-This folder contains a comprehensive set of smart contracts and application clients (ie. in a choice of languages, eg Node.JS, Java, Go etc) relating to *Commercial Paper*, a global finance investment use case. The sample contract also provide a range of queries to try out, to consolidate what you learn when you execute transactions during the tutorial.
+This folder contains a structured set of smart contracts and application clients (ie. in a choice of languages, eg Node.JS, Java, Go etc) relating to *Commercial Paper*, a finance 'instrument' or 'bond' (Global Finance). The sample contract also provide a range of queries to try out, to consolidate what you learn when you execute transactions during the tutorial.
 
-While a more detailed 'explainer' of the Commercial Paper scenario (including use case analysis, code walkthrough & practices, logical/physical representation of ledger data etc) can be found in the [Hyperledger Fabric Commercial Paper Tutorial](https://hyperledger-fabric.readthedocs.io/en/latest/tutorial/commercial_paper.html), you don't have to read through this, just to try out this sample. 
+While a more detailed 'explainer' of the Commercial Paper scenario (including use case analysis, code walkthrough & practices, logical/physical representation of ledger data etc) can be found in the [Hyperledger Fabric Commercial Paper Tutorial](https://hyperledger-fabric.readthedocs.io/en/latest/tutorial/commercial_paper.html), you don't have to read through this, just to try out this sample. There's also a [Wikipedia page](https://en.wikipedia.org/wiki/Commercial_paper)
 
 <details><summary>Key Objectives of Sample </summary>
 
-  * see a Commercial Paper use case in action
+  * see a Commercial Paper use case in action 
     
   * explore the key 'takeaways': understand differences between asset _state_ changes ('e.g. 'lifecycle') and transaction _inputs_* (e.g. 'inputs' during lifecycle)
     
@@ -36,19 +36,18 @@ Expand the twisty below to see an overview of a 'typical' Commercial paper marke
 <details><summary>Commercial Paper - what is it briefly?</summary>
  
 </br>
-It is a financial instrument, issued by established companies (eg big manufacturers, blue chip corporations) to gain short-term capital - usually no more than 6-9 months. Why? To meet short-term financial obligations. They issue a paper  ('bond', promissory note) for specific projects, such as big capital investments, to pay contractors or even debt restructuring. The tutorial describes MagnetoCorp (car manufacturer) who landed a huge contract, and will need $5m in capital (payroll obligations), to hire 1000 car workers for at least 6 months (with no car revenues yet - its a financial strain).
-
+It is a type of unsecured bond, issued by established companies (eg big manufacturers, blue chip corporations) to gain short-term capital - usually no more than 6-9 months. Why? To meet short-term financial obligations. They issue a paper  (a promissory note) for specific projects, such as big capital investments, to pay contractors or even debt restructuring. The tutorial describes MagnetoCorp (car manufacturer) who landed a huge contract, and will need approx. $5m in capital (payroll obligations), to hire 1000 car workers for at least 6 months (with no car revenues yet - its a financial strain). Underpinning this, of course, is that the issuer, MagnetoCorp, has every confidence that (say, in 6 months time) it will be in a position to pay out the face value ($5m in this case) when the commercial paper is redeemd by an investor, on its maturity date :-).
 </p>
 </details>
 
 <details><summary>Ins and Outs, Attractions of Commercial Paper Investment?</summary>
 
 </br>
-Investors (who buy Commercial Paper) are attracted as they agree to buy them at a discount (say $4.94m) on the face value (eg $5m) and obtain a higher yield than if they were simply gaining interest in a bank (eg. 2% interest on $4.95m today = $5m in 6 months time). The difference represents a 'premium' for carrying the risk of a debt/loan that is unsecured (unlike a bank) - which is where credit risk and ratings comes in. The actual yield from the investment chosen is in effect $10k greater (than pure interest). 
+Investors (who buy Commercial Paper) are attracted as they agree to buy them at a discount (say $4.94m) on the face value (eg $5m) and moreso, they obtain a higher yield than if they were simply gaining interest in a bank (eg. 2% interest on $4.95m today = $5m in 6 months time). But there is a 'premium' attached, with carrying the risk of a debt/loan that is essentially unsecured (unlike a bank) - which is where credit risk and ratings comes in. As a result, the actual yield from the investment chosen is in effect $10k greater (than pure interest, in the example given). 
 </p>
-Once an issuing corporation becomes established in the commercial paper marketplace, it builds a high credit rating (risk affects how much of a premium investors seek and therefore discount accordingly) - in fact, it is often cheaper (for a blue chip company) to draw on a commercial paper than on a bank line of credit.
+Once an issuing corporation becomes established in the commercial paper marketplace, it builds a high credit rating (risk affects how much of a premium investors seek and therefore discount accordingly) - in fact, it is often cheaper (for a blue chip company) to draw on a commercial paper than on a bank line of credit. But that rating reflects the issuer's ability to pay back on maturity.
 </p>
-I mentioned marketplace: even during a 6-9 month period, a commercial paper can be bought and sold multiple times, before the Commercial Paper reaches its maturity date, the day when the current investor (or owner) 'redeems' the paper bond with MagnetoCorp the issuer and gets its $5m (the face value) back.
+I mentioned marketplace: even during the typical 6-9 month period, a commercial paper can be bought and sold multiple times, before the Commercial Paper reaches its maturity date. On that date, the current investor (or owner) 'redeems' the paper bond with MagnetoCorp, the issuer and gets the face value of $5m.
 
 </details>
 
