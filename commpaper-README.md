@@ -14,7 +14,7 @@ While a more detailed 'explainer' of the Commercial Paper scenario (including us
     
   * try out a number of different query types: asset history, asset state, ownership, partial key, named query (criteria-based), ad-hoc queries (you supply a query)
 
-  \* the smart contract uses these (along with business logic) to decide outcomes; some inputs change the asset _state_ (like 'ownership') ; some don't.
+    \* the smart contract uses these (along with business logic) to decide outcomes; some inputs change the asset _state_ (like 'ownership') ; some don't.
 
 </p>
 </details>
