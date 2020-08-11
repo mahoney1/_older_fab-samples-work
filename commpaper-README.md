@@ -2,7 +2,7 @@
 
 # Introduction: Commercial Paper Tutorial & Samples
 
-This folder contains a comprehensive set of smart contracts and application clients (ie. in a choice of languages, eg Node.JS, Java, Go etc) that executes a Commercial Paper, a global finance & investment use case. The sample contract also provide a range of queries to try out, to consolidate what you learn when you execute transactions during the tutorial.
+This folder contains a comprehensive set of smart contracts and application clients (ie. in a choice of languages, eg Node.JS, Java, Go etc) relating to *Commercial Paper*, a global finance investment use case. The sample contract also provide a range of queries to try out, to consolidate what you learn when you execute transactions during the tutorial.
 
 While a more detailed 'explainer' of the Commercial Paper scenario (including use case analysis, code walkthrough & practices, logical/physical representation of ledger data etc) can be found in the [Hyperledger Fabric Commercial Paper Tutorial](https://hyperledger-fabric.readthedocs.io/en/latest/tutorial/commercial_paper.html), you don't have to read through this, just to try out this sample. 
 
