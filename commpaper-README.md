@@ -21,6 +21,16 @@ While a more detailed 'explainer' of the Commercial Paper scenario (including us
 </p>
 </details>
 
+<details><summary>Why blockchain: benefits for Commercial Paper?</summary>
+  * replace long-winded, time consuming processing between multiple organisations - the network makes it one centralized hub.
+  * full transparency, traceability and ownership of issued papers
+  * speed up a process that can take days - e. make same-day issuance a reality, or even a market paradigm.
+  * in asset-backed commercial paper markets, blockchain can help increase accessibility of this marketplace to SMEs to partake in issuance, where otherwise it was inaccessible.
+  * integration to other areas, like supply chain finance
+ 
+ </p>
+ </details>
+ 
 But first, it might useful to explain Commercial Paper, an unsecured promissory note issued to obtain capital, and operates in global financial markets. A Commercial Paper instance is represented as an asset with a lifecycle, recorded on the blockchain - transactions change its _state_ (over time) and those transactions, naturally - have _inputs_.
 
 Expand the twisty below to see an overview of a 'typical' Commercial paper marketplace - transactions, queries being executed by different organisations (we'll focus on two of these organisations)
