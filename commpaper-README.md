@@ -107,8 +107,9 @@ This `README.md` file is in the `commercial-paper` directory, the source code fo
    - Issue the Paper as Magnetocorp (org2)
    - Buy the paper as DigiBank (org1)
    - Redeem the paper as DigiBank (org1)
-   
-   <sup>[_back to top_](#top)</sup>
+
+
+<sup>[_back to top_](#top)</sup>
 
 ## Setup
 
