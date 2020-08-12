@@ -36,10 +36,8 @@ While a more detailed 'explainer' of the Commercial Paper scenario (including us
  </p>
  </details>
  
- 
-But first, it might useful to explain Commercial Paper, an unsecured promissory note issued to obtain capital, and operates in global financial markets. A Commercial Paper instance is represented as an asset with a lifecycle, recorded on the blockchain - transactions change its _state_ (over time) and those transactions, naturally - have _inputs_.
 
-Expand the twisty below to see an overview of a 'typical' Commercial paper marketplace - transactions, queries being executed by different organisations (we'll focus on two of these organisations)
+ Expand the twisty below to see an overview of a 'typical' Commercial paper marketplace - transactions, queries being executed by different organisations (we'll focus on two of these organisations)
 
 <details><summary>PaperNet Overview - The sample commercial paper marketplace</summary>
 
@@ -47,6 +45,8 @@ Expand the twisty below to see an overview of a 'typical' Commercial paper marke
 
 </p>
 </details>
+ 
+But first, it might useful to explain Commercial Paper, an unsecured promissory note issued to obtain capital, and operates in global financial markets. A Commercial Paper instance is represented as an asset with a lifecycle, recorded on the blockchain - transactions change its _state_ (over time) and those transactions, naturally - have _inputs_.
 
 
 #### Explainers 
@@ -68,6 +68,8 @@ Once an issuing corporation becomes established in the commercial paper marketpl
 I mentioned marketplace: even during the typical 6-9 month period, a commercial paper can be bought and sold multiple times (its quoted, at the discounted price on money markets), before the Commercial Paper reaches its maturity date. On that date, the current investor (or owner) 'redeems' the paper bond with MagnetoCorp, the issuer and gets the face value of $5m.
 
 </details>
+
+<sup>[_back to top_](#top)</sup>
 
 ## Scenario Overview
 
@@ -105,6 +107,8 @@ This `README.md` file is in the `commercial-paper` directory, the source code fo
    - Issue the Paper as Magnetocorp (org2)
    - Buy the paper as DigiBank (org1)
    - Redeem the paper as DigiBank (org1)
+   
+   <sup>[_back to top_](#top)</sup>
 
 ## Setup
 
@@ -163,6 +167,8 @@ Similarly in your 'DigiBank' window run the following command
 cd fabric-samples/commercial-paper/organization/digibank
 ./digibank.sh
 ```
+
+<sup>[_back to top_](#top)</sup>
 
 ### Deploy the smart contract to the channel
 
@@ -253,6 +259,8 @@ peer chaincode query -o localhost:7050  --ordererTLSHostnameOverride orderer.exa
                                         --tls --cafile $ORDERER_CA | jq -C | more
 ```
 
+<sup>[_back to top_](#top)</sup>
+
 **For a Java Contract:**
 
 Before the `peer lifecycle chaincode package` command, you will need to change into each organization's `contract-java` directory and issue
@@ -301,6 +309,8 @@ npm install
 >  Note that there is NO dependency between the language of any one client application and any contract. Mix and match as you wish!
 
 The docker containers don't contain the node or Java runtimes; so it is best to exit the docker containers - but keep the windows open and run the applications locally.
+
+<sup>[_back to top_](#top)</sup>
 
 ### Issue the paper
 
