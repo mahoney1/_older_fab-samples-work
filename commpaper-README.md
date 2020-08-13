@@ -170,11 +170,11 @@ You can re-use this console window if you wish, but it is recommended to run a d
 
 The contract code is available as either JavaScript, Java or Go. You can use either one, and the choice of contract language does not affect the choice of client language. With the v2.0 Fabric chaincode lifecycle, this requires operations for both MagnetoCorp and Digibank admin.  Open two windows in the fabric-samples/commercial paper directory, one for each organization.
 
-In your 'MagnetoCorp' window run the following commands, to show the shell environment variables needed to act as that organization.
+In your 'MagnetoCorp' window run the following commands, to set the shell environment variables needed to act as that organization. The leading '.' in the command sequence sets in your current environment - if you do not run this, you will not be able to package the chaincode.
 
 ```
 cd fabric-samples/commercial-paper/organization/magnetocorp
-./magnetocorp.sh
+. ./magnetocorp.sh
 ```
 
 You can either copy and paste them directly into the terminal, or invoke directly in your own command shell. For example if you are using bash or zsh on Linux you can use this command.
@@ -183,11 +183,11 @@ You can either copy and paste them directly into the terminal, or invoke directl
 source <(./magnetocorp.sh)
 ```
 
-Similarly in your 'DigiBank' window run the following command
+Similarly in your 'DigiBank' window run the following commands as shown:
 
 ```
 cd fabric-samples/commercial-paper/organization/digibank
-./digibank.sh
+. ./digibank.sh
 ```
 
 <sup>[_back to top_](#top)</sup>
