@@ -37,7 +37,7 @@ While a more detailed 'explainer' of the Commercial Paper scenario (including us
  </details>
  
 
- Expand the twisty below to see an overview of a 'typical' Commercial paper marketplace - transactions, queries being executed by different organisations (we'll focus on two of these organisations)
+ Expand the twisty below to see an overview diagram of a 'sample' Commercial paper marketplace - transactions, queries being executed by different organisations (we'll focus on two of these organisations)
 
 <details><summary>PaperNet Overview - The sample commercial paper marketplace</summary>
 
