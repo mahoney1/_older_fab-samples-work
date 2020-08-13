@@ -272,18 +272,96 @@ peer chaincode query -o localhost:7050  --ordererTLSHostnameOverride orderer.exa
 <details><summary>**For a Java Contract:**</summary>
 
 
-Before the `peer lifecycle chaincode package` command, you will need to change into each organization's `contract-java` directory and issue
+Before the `peer lifecycle chaincode package` command below, you will first need to change into each organization's `contract-java` directory and issue
 
 ```
 ./gradlew build
 ```
 
-Then from the parent directory when you package the contract, use this variation of the command (to that shown in _Javascript_ section above),  to package the _java_ specific contract
+Then complete the steps below.
+
+
+Running in MagnetoCorp contract directory:
+
 ```
+# MAGNETOCORP
+
 peer lifecycle chaincode package cp.tar.gz --lang java --path ./contract-java --label cp_0
+peer lifecycle chaincode install cp.tar.gz
+
+export PACKAGE_ID=$(peer lifecycle chaincode queryinstalled --output json | jq -r '.installed_chaincodes[0].package_id')
+echo $PACKAGE_ID
+
+peer lifecycle chaincode approveformyorg  --orderer localhost:7050 --ordererTLSHostnameOverride orderer.example.com \
+                                          --channelID mychannel  \
+                                          --name papercontract  \
+                                          -v 0  \
+                                          --package-id $PACKAGE_ID \
+                                          --sequence 1  \
+                                          --tls  \
+                                          --cafile $ORDERER_CA
+                                          
+peer lifecycle chaincode checkcommitreadiness --channelID mychannel --name papercontract -v 0 --sequence 1
 ```
 
-After this point,  the steps are exactly the same as for JavaScript section above (ie _peer lifecycle chaincode install_ onwards).
+Running in Digibank
+
+```
+
+# DIGIBANK
+
+peer lifecycle chaincode package cp.tar.gz --lang node --path ./contract --label cp_0
+peer lifecycle chaincode install cp.tar.gz
+
+export PACKAGE_ID=$(peer lifecycle chaincode queryinstalled --output json | jq -r '.installed_chaincodes[0].package_id')
+echo $PACKAGE_ID
+
+peer lifecycle chaincode approveformyorg  --orderer localhost:7050 --ordererTLSHostnameOverride orderer.example.com \
+                                          --channelID mychannel  \
+                                          --name papercontract  \
+                                          -v 0  \
+                                          --package-id $PACKAGE_ID \
+                                          --sequence 1  \
+                                          --tls  \
+                                          --cafile $ORDERER_CA
+
+peer lifecycle chaincode checkcommitreadiness --channelID mychannel --name papercontract -v 0 --sequence 1
+
+```
+
+Once both organizations have installed, and approved the chaincode, it can be committed.
+
+```
+# MAGNETOCORP
+
+peer lifecycle chaincode commit -o localhost:7050 \
+                                --peerAddresses localhost:7051 --tlsRootCertFiles ${PEER0_ORG1_CA} \
+                                --peerAddresses localhost:9051 --tlsRootCertFiles ${PEER0_ORG2_CA} \
+                                --ordererTLSHostnameOverride orderer.example.com \
+                                --channelID mychannel --name papercontract -v 0 \
+                                --sequence 1 \
+                                --tls --cafile $ORDERER_CA --waitForEvent 
+
+```
+
+To test, try sending some simple transactions.
+
+```
+
+peer chaincode invoke -o localhost:7050  --ordererTLSHostnameOverride orderer.example.com \
+                                --peerAddresses localhost:7051 --tlsRootCertFiles ${PEER0_ORG1_CA} \
+                                --peerAddresses localhost:9051 --tlsRootCertFiles ${PEER0_ORG2_CA} \
+                                --channelID mychannel --name papercontract \
+                                -c '{"Args":["org.papernet.commercialpaper:instantiate"]}' ${PEER_ADDRESS_ORG1} ${PEER_ADDRESS_ORG2} \
+                                --tls --cafile $ORDERER_CA --waitForEvent
+
+peer chaincode query -o localhost:7050  --ordererTLSHostnameOverride orderer.example.com \
+                                        --channelID mychannel \
+                                        --name papercontract \
+                                        -c '{"Args":["org.hyperledger.fabric:GetMetadata"]}' \
+                                        --peerAddresses localhost:9051 --tlsRootCertFiles ${PEER0_ORG2_CA} \
+                                        --tls --cafile $ORDERER_CA | jq -C | more
+```
 
 </p>
 </details>
@@ -297,12 +375,91 @@ Before the `peer lifecycle chaincode package` command step, you will need to cha
 go mod vendor
 ```
 
-Then, from the parent directory when you package the contract, use this variation of the command (from previous sections) to package the _go_ specific contract
+Then complete the steps below. 
+
+
+Running in MagnetoCorp contract directory:
+
 ```
+# MAGNETOCORP
+
 peer lifecycle chaincode package cp.tar.gz --lang golang --path ./contract-go --label cp_0
+peer lifecycle chaincode install cp.tar.gz
+
+export PACKAGE_ID=$(peer lifecycle chaincode queryinstalled --output json | jq -r '.installed_chaincodes[0].package_id')
+echo $PACKAGE_ID
+
+peer lifecycle chaincode approveformyorg  --orderer localhost:7050 --ordererTLSHostnameOverride orderer.example.com \
+                                          --channelID mychannel  \
+                                          --name papercontract  \
+                                          -v 0  \
+                                          --package-id $PACKAGE_ID \
+                                          --sequence 1  \
+                                          --tls  \
+                                          --cafile $ORDERER_CA
+                                          
+peer lifecycle chaincode checkcommitreadiness --channelID mychannel --name papercontract -v 0 --sequence 1
 ```
 
-After this point,  the steps are exactly the same as for JavaScript above (ie _peer lifecycle chaincode install_ onwards).
+Running in Digibank
+
+```
+
+# DIGIBANK
+
+peer lifecycle chaincode package cp.tar.gz --lang node --path ./contract --label cp_0
+peer lifecycle chaincode install cp.tar.gz
+
+export PACKAGE_ID=$(peer lifecycle chaincode queryinstalled --output json | jq -r '.installed_chaincodes[0].package_id')
+echo $PACKAGE_ID
+
+peer lifecycle chaincode approveformyorg  --orderer localhost:7050 --ordererTLSHostnameOverride orderer.example.com \
+                                          --channelID mychannel  \
+                                          --name papercontract  \
+                                          -v 0  \
+                                          --package-id $PACKAGE_ID \
+                                          --sequence 1  \
+                                          --tls  \
+                                          --cafile $ORDERER_CA
+
+peer lifecycle chaincode checkcommitreadiness --channelID mychannel --name papercontract -v 0 --sequence 1
+
+```
+
+Once both organizations have installed, and approved the chaincode, it can be committed.
+
+```
+# MAGNETOCORP
+
+peer lifecycle chaincode commit -o localhost:7050 \
+                                --peerAddresses localhost:7051 --tlsRootCertFiles ${PEER0_ORG1_CA} \
+                                --peerAddresses localhost:9051 --tlsRootCertFiles ${PEER0_ORG2_CA} \
+                                --ordererTLSHostnameOverride orderer.example.com \
+                                --channelID mychannel --name papercontract -v 0 \
+                                --sequence 1 \
+                                --tls --cafile $ORDERER_CA --waitForEvent 
+
+```
+
+To test, try sending some simple transactions.
+
+```
+
+peer chaincode invoke -o localhost:7050  --ordererTLSHostnameOverride orderer.example.com \
+                                --peerAddresses localhost:7051 --tlsRootCertFiles ${PEER0_ORG1_CA} \
+                                --peerAddresses localhost:9051 --tlsRootCertFiles ${PEER0_ORG2_CA} \
+                                --channelID mychannel --name papercontract \
+                                -c '{"Args":["org.papernet.commercialpaper:instantiate"]}' ${PEER_ADDRESS_ORG1} ${PEER_ADDRESS_ORG2} \
+                                --tls --cafile $ORDERER_CA --waitForEvent
+
+peer chaincode query -o localhost:7050  --ordererTLSHostnameOverride orderer.example.com \
+                                        --channelID mychannel \
+                                        --name papercontract \
+                                        -c '{"Args":["org.hyperledger.fabric:GetMetadata"]}' \
+                                        --peerAddresses localhost:9051 --tlsRootCertFiles ${PEER0_ORG2_CA} \
+                                        --tls --cafile $ORDERER_CA | jq -C | more
+```
+
 
 </p>
 </details>
