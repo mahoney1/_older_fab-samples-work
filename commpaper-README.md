@@ -188,7 +188,7 @@ Note that the commands below make use of the `jq` utility for parsing output - d
 **<details><summary>For a JavaScript Contract</summary>**
 
 
-Running in MagnetoCorp contract directory:
+Running in MagnetoCorp directory:
 
 ```
 # MAGNETOCORP
