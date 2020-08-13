@@ -75,15 +75,21 @@ I mentioned marketplace: even during the typical 6-9 month period, a commercial 
 
 ![](https://hyperledger-fabric.readthedocs.io/en/latest/_images/commercial_paper.diagram.1.png)
 
-In this tutorial two organizations, MagnetoCorp and DigiBank, trade commercial paper with each other on 'PaperNet', the marketplace represented by a Hyperledger Fabric blockchain network. 
+In this tutorial two organizations, MagnetoCorp and DigiBank, trade commercial paper with each other on 'PaperNet', the marketplace represented by a Hyperledger Fabric blockchain network. Note that there are two alternative transaction flows - one which mirrors the [Commercial Paper Tutorial](https://hyperledger-fabric.readthedocs.io/en/latest/tutorial/commercial_paper.html) as described in Fabric documentation, and one which requires the authorised owner of the paper to complete a transfer following a request to buy the commercial paper - the latter example features an authorisation check in the smart contract that ensures the transactor is from the organisation that currently owns the commercial paper - they approve and complete the buy request. These are the commercial paper transaction lifecycles you can try out:
 
-The tutorial shows the commercial paper asset lifecycle: _issue_, _buy_ ( 1 to _n_ ), and _redeem_ transactions: the key 'takeaways' from the scenario are:
+![Transaction Flow alternatives](img/transaction-flow.png)
+
+The tutorial exercises the commercial paper asset lifecycle: _issue_, _buy_ ( 1 to _n_ ) (or _buy_request / _transfer_ alternative), and _redeem_ transactions: the key 'takeaways' from the scenario are:
 
 - understanding the  _changes in state_ in the commercial paper asset (reflected in the ledger world state) which reaches maturity after 6 months.
 - understanding the _transaction inputs_  for each transaction (some inputs change the asset  _state_ - eg. ownership) and some _don't_  (e.g. purchase price) and not part of the asset - but importantly, the _inputs_ for a given transaction are recorded on the blockchain).
 - understanding the importance of _queries_  such as: asset history, rich queries (criteria matching etc), transaction history (where the inputs are recorded)
 
-Client applications (CLI based) are used, to perform the transactions. 
+Client applications (CLI based) are used: 
+
+- to perform the transactions
+- run queries
+- examine the transaction inputs (as opposed to _states_) that are written to the ledger after you perform a transaction.
 
 It uses the `test-network` (which is part of Fabric Samples). You’ll act as Isabella, an employee of MagnetoCorp (Org1), who will issue a commercial paper on its behalf. You’ll then switch hats to take the role of Balaji, an employee of DigiBank (Org2), who will buy this commercial paper, hold it for a period of time, and then redeem it with MagnetoCorp for a small profit or yield. Then later, you'll query the ledger - that's it :-) 
 
