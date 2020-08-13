@@ -213,6 +213,9 @@ peer lifecycle chaincode install cp.tar.gz
 
 export PACKAGE_ID=$(peer lifecycle chaincode queryinstalled --output json | jq -r '.installed_chaincodes[0].package_id')
 echo $PACKAGE_ID      # FYI may look like this: cp_0:44a2d706b53cce3e371631aeeaed7f33741e8211305b09d64783bdea9fe00cd7
+```
+
+```
 
 peer lifecycle chaincode approveformyorg  --orderer localhost:7050 --ordererTLSHostnameOverride orderer.example.com \
                                           --channelID mychannel  \
