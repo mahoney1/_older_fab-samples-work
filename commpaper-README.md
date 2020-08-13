@@ -483,14 +483,15 @@ npm install
 
 The docker containers don't contain the node or Java runtimes; so it is best to exit the docker containers - but keep the windows open and run the applications locally.
 
-<sup>[_back to top_](#top)</sup>
 
-### Issue the paper
+**<details><summary>Issue the commercial paper</summary>**
 
-This is running as *MagnetoCorp* These commands are to be run in the
-`commercial-paper/organization/magnetocorp/application` directory or the `commercial-paper/organization/magnetocorp/application-java`
+The paper is issued by *MagnetoCorp* 
 
-*Add the Identity to be used*
+You can now run the applications to issue the commercial paper. Change to either the 
+`commercial-paper/organization/magnetocorp/application` directory (javascript) or  `commercial-paper/organization/magnetocorp/application-java` directory (java)
+
+*Add the Identity to be used to the wallet*
 
 ```
 node addToWallet.js
@@ -505,12 +506,15 @@ node issue.js
 # or
 java -cp target/commercial-paper-0.0.1-SNAPSHOT.jar org.magnetocorp.Issue
 ```
+</p>
+</details>
 
-### Buy and Redeem the paper
 
-This is running as *Digibank*; 
+**<details><summary>Buy the commercial paper</summary>**
 
-You can now run the applications to buy and redeem the paper. Change to either the
+_Buy_ is performed as *Digibank*; 
+
+You can now run the applications to buy the paper. Change to either the
 `commercial-paper/organization/digibank/application` directory or  `commercial-paper/organization/digibank/application-java`
 
 *Add the Identity to be used*
@@ -529,6 +533,17 @@ node buy.js
 java -cp target/commercial-paper-0.0.1-SNAPSHOT.jar org.digibank.Buy
 ```
 
+</p>
+</details>
+
+**<details><summary>Redeem the commercial paper</summary>**
+
+_Redeem_ is performed as *Digibank* ie the current owner (purchaser) in the lifecycle.
+
+You can now run the applications to redeem the paper. Change to either the
+`commercial-paper/organization/digibank/application` directory or  `commercial-paper/organization/digibank/application-java`
+
+
 *Redeem*
 
 ```
@@ -536,6 +551,9 @@ node redeem.js
 # or
 java -cp target/commercial-paper-0.0.1-SNAPSHOT.jar org.digibank.Redeem
 ```
+
+</p>
+</details>
 
 ## Clean up
 When you are finished using the Fabric test network and the commercial paper smart contract and applications, you can use the following command to clean up the network:
