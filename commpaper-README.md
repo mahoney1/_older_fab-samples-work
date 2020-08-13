@@ -21,7 +21,7 @@ While a more detailed 'explainer' of the Commercial Paper scenario (including us
 </p>
 </details>
 
-<details><summary>Why blockchain: benefits to Commercial Paper marketplaces?</summary>
+<details><summary>Blockchain: benefits to Commercial Paper marketplaces?</summary>
  
   * replace long-winded, time consuming processing between multiple organisations - the network makes it one centralized hub and helps simplify workflow.
  
