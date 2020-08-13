@@ -128,7 +128,13 @@ You will need a machine with the following
 - Maven to build the Java applications
 
 You will need to installed the `peer` cli binaries and cloned the `fabric-samples` repository. For more information see 
-[Install the Samples, Binaries and Docker Images](https://hyperledger-fabric.readthedocs.io/en/latest/install.html) in the Hyperledger Fabric documentation.
+[Install the Samples, Binaries and Docker Images](https://hyperledger-fabric.readthedocs.io/en/latest/install.html) in the Hyperledger Fabric documentation. Once you have installed the cli binaries, ensure you have added the  `bin` directory (for your `peer` commands used by scripts below) to your exported `PATH` variable in your `.bashrc` or `.profile` directory (per below). This is important as you will be opening a number of windows which will need PATH set. Finally, check that it finds the `peer` command in your PATH using the `which` command  eg.
+
+```
+export PATH=<path_to_bin_directory>:$PATH
+which peer
+```
+
 
 It is advised to have 3 terminal windows (consoles) open; 
 
