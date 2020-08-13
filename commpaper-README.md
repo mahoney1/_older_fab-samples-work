@@ -174,13 +174,15 @@ cd fabric-samples/commercial-paper/organization/digibank
 
 ### Deploy the smart contract to the channel
 
-You need to perform similar operations for both organizations. For different contract languages the steps are very similar. The steps for JavaScript are shown first, with the details of different languages afterwards. 
+You need to perform similar operations for _both_ organizations and for your language choice from the instructions below. For the different contract languages, the steps are very similar  - the full set of steps are actually shown in the JavaScript section (see twisty). However, you will perform one or two different initial steps for Java or Go before completing the remaining common steps as instructed in those language sections. 
+
+Note that the commands below make use of the `jq` utility for parsing output - download and install it from [here](https://stedolan.github.io/jq/download/)
 
 
-<details><summary>**For a JavaScript Contract**</summary>
+<details><summary> ** For a JavaScript Contract ** </summary>
 
 
-Running in MagnetoCorp:
+Running in MagnetoCorp contract directory:
 
 ```
 # MAGNETOCORP
