@@ -267,8 +267,6 @@ peer chaincode query -o localhost:7050  --ordererTLSHostnameOverride orderer.exa
 </details>
 
 
-<sup>[_back to top_](#top)</sup>
-
 <details><summary>**For a Java Contract:**</summary>
 
 
@@ -463,6 +461,10 @@ peer chaincode query -o localhost:7050  --ordererTLSHostnameOverride orderer.exa
 
 </p>
 </details>
+
+
+<sup>[_back to top_](#top)</sup>
+
 
 ## Client Applications
 
