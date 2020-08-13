@@ -179,7 +179,7 @@ You need to perform similar operations for _both_ organizations and for your lan
 Note that the commands below make use of the `jq` utility for parsing output - download and install it from [here](https://stedolan.github.io/jq/download/)
 
 
-<details><summary>For a JavaScript Contract</summary>
+**<details><summary>For a JavaScript Contract</summary>**
 
 
 Running in MagnetoCorp contract directory:
@@ -364,7 +364,7 @@ peer chaincode query -o localhost:7050  --ordererTLSHostnameOverride orderer.exa
 </p>
 </details>
 
-<details><summary>For a Go Contract</summary>
+**<details><summary>For a Go Contract</summary>**
 
 
 Before the `peer lifecycle chaincode package` command step, you will need to change into <ins>each</ins> organization's `contract-go` directory and issue
