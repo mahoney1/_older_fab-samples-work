@@ -79,7 +79,7 @@ In this tutorial two organizations, MagnetoCorp and DigiBank, trade commercial p
 
 ![Transaction Flow alternatives](img/transaction-flow.png)
 
-The tutorial exercises the commercial paper asset lifecycle: _issue_, _buy_ ( 1 to _n_ ) (or _buy_request / _transfer_ alternative), and _redeem_ transactions: the key 'takeaways' from the scenario are:
+The tutorial exercises the commercial paper asset lifecycle: _issue_, _buy_ ( 1 to _n_ ) (or _buy_request_ / _transfer_ alternative), and _redeem_ transactions: the key 'takeaways' from the scenario are:
 
 - understanding the  _changes in state_ in the commercial paper asset (reflected in the ledger world state) which reaches maturity after 6 months.
 - understanding the _transaction inputs_  for each transaction (some inputs change the asset  _state_ - eg. ownership) and some _don't_  (e.g. purchase price) and not part of the asset - but importantly, the _inputs_ for a given transaction are recorded on the blockchain).
