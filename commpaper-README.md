@@ -143,9 +143,13 @@ cd fabric-samples/commercial-paper
 
 ## Running the Infrastructure
 
-In one console window, run the `./network-starter.sh` script; this will start the basic infrastructure.
+In one console window, run the network starter script - this will start the two organization `test-network` blockchain network.
 
-You can re-use this console window if you wish, but it is recommended to run a docker container monitoring script. This will let you view what Fabric is doing and help diagnose any failures.
+```
+./network-starter.sh
+```
+
+You can re-use this console window if you wish, but it is recommended to run a docker container monitoring script in its own window. This will let you view what Fabric is doing and help diagnose any failures.
 
 ```bash
 ./organization/magnetocorp/configuration/cli/monitordocker.sh net_test
