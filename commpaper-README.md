@@ -100,11 +100,11 @@ Below are the quick start instructions for running the tutorial. As mentioned, i
 
 This `README.md` file is in the `commercial-paper` directory, the source code for client applications and the contracts is in the `organization` directory.
 
-### Steps
+### High-Level Overview of Steps
 
-1) Start the Hyperledger Fabric infrastructure
+1) Install Binaries, Start the Hyperledger Fabric infrastructure
 
-   The 'test-network' will be used - this has two organizations 'org1' and 'org2'  DigiBank will be org1, and MagnetoCorp will be org2. 
+   The Fabric 'test-network' will be used - this has two organizations 'Org1' and 'Org2'  DigiBank will be Org1, and MagnetoCorp will be Org2. 
 
 2) Install and Instantiate the Contracts
 
@@ -114,6 +114,7 @@ This `README.md` file is in the `commercial-paper` directory, the source code fo
    - Buy the paper as DigiBank (org1)
    - Redeem the paper as DigiBank (org1)
 
+   See also the transaction flow and alternatives in the Scenario Overview below.
 
 <sup>[_back to top_](#top)</sup>
 
@@ -126,16 +127,20 @@ You will need a machine with the following
 - Java v8 if you want to run Java client applications
 - Maven to build the Java applications
 
-You will need to install the peer cli binaries and this fabric-samples repository available. For more information
+You will need to installed the `peer` cli binaries and cloned the `fabric-samples` repository. For more information see 
 [Install the Samples, Binaries and Docker Images](https://hyperledger-fabric.readthedocs.io/en/latest/install.html) in the Hyperledger Fabric documentation.
 
-It is advised to have 3 console windows open; 
+It is advised to have 3 terminal windows (consoles) open; 
 
-* one to monitor the infrastructure and 
-* one each for MagnetoCorp and 
-* DigiBank. 
+* one to monitor the infrastructure
+* one for MagnetoCorp 
+* one for DigiBank. 
 
-Once you've cloned the fabric-samples - change to the commercial-paper directory in each window. 
+Once you've cloned the `fabric-samples` - change to the commercial-paper directory in each window. 
+
+```
+git clone https://github.com/hyperledger/fabric-samples.git
+```
 
 ```
 cd fabric-samples/commercial-paper
