@@ -564,12 +564,27 @@ node buy.js
 java -cp target/commercial-paper-0.0.1-SNAPSHOT.jar org.digibank.Buy
 ```
 
+If you have just executed a `buy` transaction above - jump to the `redeem` transaction below.
+
+*Alternative to buy: Request to Buy the paper (buy/transfer sequence) *
+
+```
+node buy_request.js
+```
+
+Then complete the buy request by switching to the `MagnetoCorp` application directory (javascript) and execute a `transfer` transaction as MagnetoCorp:
+
+```
+cd ../../magnetocorp/application
+node transfer.js
+```
+
 </p>
 </details>
 
 **<details><summary>Redeem the commercial paper</summary>**
 
-_Redeem_ is performed as *Digibank* ie the current owner (purchaser) in the lifecycle.
+_Redeem_ is performed as *Digibank*  - the current owner (buyer) in the lifecycle.
 
 You can now run the applications to redeem the paper. Change to either the
 `commercial-paper/organization/digibank/application` directory or  `commercial-paper/organization/digibank/application-java`
