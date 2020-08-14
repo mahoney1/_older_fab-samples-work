@@ -615,7 +615,7 @@ java -cp target/commercial-paper-0.0.1-SNAPSHOT.jar org.digibank.Redeem
 
 **<details><summary>Perform Queries: Ownership, Asset History etc</summary>**
  
- Having completed the full commercial paper lifecycle for one paper (paper number: 00001) some queries below won't show a lot of data - as an optional exercise, you can change the scripts above (paper number: 00002) to create another paper lifecycle and run the `queryapp` application below, with more data available.
+ Having completed the full commercial paper lifecycle for one paper (paper number: 00001) some queries below won't show a lot of data - as an optional exercise, you can change the scripts above (paper number: 00002) to create another paper lifecycle and run the `queryapp` application below (change query 1 to the new CP number FYI), with more data available.
  
  Execute the following query script, which will run the following 5 queries, in order:
  
@@ -633,6 +633,8 @@ java -cp target/commercial-paper-0.0.1-SNAPSHOT.jar org.digibank.Redeem
   
  </p>
 </details>
+
+When you're done with this section, return to the terminal where your _listener_ application is running, and terminate the process.
 
 ## Clean up
 When you are finished using the Fabric test network and the commercial paper smart contract and applications, you can use the following command to clean up the network:
