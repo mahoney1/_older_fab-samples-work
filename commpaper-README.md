@@ -514,6 +514,13 @@ npm install
 
 The docker containers don't contain the node or Java runtimes; so it is best to exit the docker containers - but keep the windows open and run the applications locally.
 
+As mentioned earlier in the introduction, transaction _inputs_ are recorded on the ledger as well as any asset _state_ changes. Next, you will launch a 'listener' application that shows you these inputs, as you complete each transaction in the commercial paper lifecycle (Paper Number: 00001) . In a new terminal - from the `commercial-paper/organization/magnetocorp/application` directory (javascript), launch the listener application - it will show the inputs that were recorded on blocks (ie part of the ledger). 
+
+After start up, it may show some spurious messages, and then will go into a _listening_ state - as transactions occur below, messages will be displayed, so keep an eye out.
+
+```
+node cpListener.js
+```
 
 **<details><summary>Issue the commercial paper</summary>**
 
@@ -537,6 +544,9 @@ node issue.js
 # or
 java -cp target/commercial-paper-0.0.1-SNAPSHOT.jar org.magnetocorp.Issue
 ```
+
+Don't forget to check the application listener for messages above!
+
 </p>
 </details>
 
@@ -564,18 +574,19 @@ node buy.js
 java -cp target/commercial-paper-0.0.1-SNAPSHOT.jar org.digibank.Buy
 ```
 
-If you have just executed a `buy` transaction above - jump to the `redeem` transaction below.
+If you have just executed a `buy` transaction above - jump to the `redeem` transaction below - otherwise execute the _buy_/_transfer_ sequence as described earlier.
 
-*Alternative to buy: Request to Buy the paper (buy/transfer sequence) *
+*Alternative: Request to Buy the paper (buy/transfer)*
 
 ```
 node buy_request.js
 ```
 
-Then complete the buy request by switching to the `MagnetoCorp` application directory (javascript) and execute a `transfer` transaction as MagnetoCorp:
+Now complete the _request_ by switching to the `MagnetoCorp` application directory (javascript) and execute a `transfer` transaction as MagnetoCorp:
 
 ```
 cd ../../magnetocorp/application
+
 node transfer.js
 ```
 
@@ -599,6 +610,28 @@ java -cp target/commercial-paper-0.0.1-SNAPSHOT.jar org.digibank.Redeem
 ```
 
 </p>
+</details>
+
+
+**<details><summary>Perform Queries: Ownership, Asset History etc</summary>**
+ 
+ Having completed the full commercial paper lifecycle for one paper (paper number: 00001) some queries below won't show a lot of data - as an optional exercise, you can change the scripts above (paper number: 00002) to create another paper lifecycle and run the `queryapp` application below, with more data available.
+ 
+ Execute the following query script, which will run the following 5 queries, in order:
+ 
+  - History of Commercial Paper (Note: the paper state is shown more descriptively eg.  'ISSUED', 'TRADING' and based on currentState values on ledger)
+  - Ownership of Commercial Papers
+  - Partial Key query, for Commercial papers in org.papernet.papers namespace belonging to MagnetoCorp
+  - Named Query: all redeemed papers in a state of 'redeemed (currentState = 4)
+  - Named Query: all commercial papers with a face value > $4m
+  
+  From the `digibank/application` subdirectory run:
+  
+  ```
+  node queryapp.js 
+  ```
+  
+ </p>
 </details>
 
 ## Clean up
