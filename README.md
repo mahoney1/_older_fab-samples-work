@@ -1,2 +1,2 @@
 # fab-samples-work
-some initial drafts for Fabric Samples
+some initial drafts for Fabric Samples (not latest)
